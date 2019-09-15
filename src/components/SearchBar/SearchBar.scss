@@ -81,13 +81,12 @@
 }
 
 .input-area-header {
-  height: 70px;
-  padding: 0;
-  padding-left: 15px;
+  padding: 0 0 0 15px;
   font-size: 16px;
   border-width: 0;
-  width: 100vh;
-  border-left-width: 1px;
+  width: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .search-bar {
@@ -96,8 +95,10 @@
   height: 70px;
   border-radius: 10px;
   background-color: #fff;
-  width: 1000px;
-  margin-top: 50px;
+  max-width: 800px;
+  margin: 50px auto;
+  grid-area: inputText;
+  justify-content: space-between;
 }
 
 .search-bar:hover {
@@ -113,7 +114,7 @@
 }
 
 .input-area-header:focus {
-  outline-color: #0a5;
+  outline: none;
 }
 
 .input-area-header:hover {
@@ -124,4 +125,28 @@
   width: 20%;
   border-width: 0;
   color: rgba(48, 48, 48, 0.6);
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #95a5a6;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  background: white;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important;
 }

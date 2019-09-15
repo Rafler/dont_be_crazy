@@ -25,13 +25,12 @@ class Main extends React.Component {
     const {
       events,
       categoryClick,
-      active,
+      indexItem,
     } = this.props;
-    console.log(events);
     return (
       <div className="mainBlock">
         <SearchBar />
-        <Filters categories={this.state.categories} events={events} categoryClick={categoryClick} active={active}/>
+        <Filters categories={this.state.categories} events={events} categoryClick={categoryClick} indexItem={indexItem}/>
         <Cards events={events} />
       </div>
 

@@ -1,5 +1,6 @@
 .filtersBlock {
   padding-left: 20px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  grid-area: categories; }
 
 /*# sourceMappingURL=Filters.css.map */

@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,aAAc;EACZ,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI",
+"mappings": "AAAA,aAAc;EACZ,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,UAAU",
 "sources": ["Filters.scss"],
 "names": [],
 "file": "Filters.css"

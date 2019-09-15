@@ -1,5 +1,17 @@
 .mainBlock {
-  padding: 150px 60px 0;
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  padding-top: 150px;
   display: grid;
   grid-template-columns: 1fr 6fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "inputText inputText"
+    "categories cards";
+}
+
+@media screen and (min-width: 1366px) {
+  .mainBlock {
+    width: 1254px;
+  }
 }

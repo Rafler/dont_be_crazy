@@ -1,3 +1,7 @@
-
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  grid-area: cards; }
 
 /*# sourceMappingURL=Cards.css.map */

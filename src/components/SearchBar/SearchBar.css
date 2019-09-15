@@ -1,0 +1,112 @@
+.category-input-header {
+  background-color: white;
+  height: 70px;
+  border-width: 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(48, 48, 48, 0.6);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 40px 0 45px;
+  display: flex;
+  align-items: baseline;
+  outline: none; }
+
+.category-input-header:hover {
+  cursor: pointer; }
+
+.category-input-header::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(48, 48, 48, 0.6);
+  margin-left: 5px;
+  transition: 0.5s ease-out; }
+
+.category-input-header.open::after {
+  border-bottom: 5px solid rgba(48, 48, 48, 0.6);
+  border-top: 0; }
+
+.select-style {
+  position: relative; }
+
+.dropdown {
+  display: none; }
+
+.dropdown.open {
+  display: block;
+  position: absolute;
+  background: #fff;
+  top: 70px;
+  width: 164px;
+  border-radius: 10px;
+  box-shadow: 2.828px 2.828px 3px rgba(44, 46, 47, 0.13); }
+
+.drop-links {
+  transition: background-color 1s ease;
+  font-size: 18px;
+  color: #484848;
+  font-weight: 300;
+  padding: 20px 12px;
+  border-radius: 10px; }
+
+.drop-links:hover {
+  background-color: #0a5;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px; }
+
+.btn-submit-search-header {
+  background-color: #0a5;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 600;
+  height: 70px;
+  padding: 0 20px 0 25px;
+  border-width: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.input-area-header {
+  height: 70px;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  border-width: 0;
+  width: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 50px auto;
+  grid-area: inputText; }
+
+.search-bar:hover {
+  box-shadow: 2.828px 2.828px 3px rgba(44, 46, 47, 0.13); }
+
+.btn-submit-search-header:hover {
+  cursor: pointer; }
+
+.btn-submit-search-header:focus {
+  outline: none; }
+
+.input-area-header:focus {
+  outline: none; }
+
+.input-area-header:hover {
+  cursor: pointer; }
+
+.data-area {
+  width: 20%;
+  border-width: 0;
+  color: rgba(48, 48, 48, 0.6); }
+
+/*# sourceMappingURL=SearchBar.css.map */

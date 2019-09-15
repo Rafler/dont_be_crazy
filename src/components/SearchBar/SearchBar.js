@@ -1,11 +1,12 @@
 import React from 'react';
 import './SearchBar.scss';
 
+var utc = new Date().toJSON().slice(0, 10);
 class SearchBar extends React.Component {
   state = {
     opened: false,
     inputText: '',
-    date: '',
+    date: undefined,
   };
 
   toggleDropdown = () => {
@@ -25,40 +26,22 @@ class SearchBar extends React.Component {
     console.log(this.state.inputText);
     return (
       <div className="search-bar">
-        <div className="select-style" ref={ref => (this.button = ref)}>
-          <button
-            onClick={this.toggleDropdown}
-            name="select-bar"
-            id="button"
-            className="category-input-header"
-          >
-            Category
-          </button>
-          <div
-            className={`dropdown${this.state.opened === true ? ' open' : ''}`}
-          >
-            <div className="drop-links">Festivals</div>
-            <div className="drop-links">Conferences</div>
-            <div className="drop-links">Exhibition</div>
-            <div className="drop-links">Concerts</div>
-            <div className="drop-links">Other</div>
-          </div>
-        </div>
         <input
           type="text"
           id="text"
           name="text-area"
-          placeholder="Write event you find ❤"
+          placeholder="Введіть подію, яку ви шукаєте  ❤"
           className="input-area-header"
         />
         <input
           type="date"
+          min={utc}
           name="data-area"
           className="input-area-header data-area"
         />
         <input
           type="submit"
-          value="START SEARCHING"
+          value="ПОШУК"
           className="btn-submit-search-header"
           onClick={this.clickSubmit}
         />
